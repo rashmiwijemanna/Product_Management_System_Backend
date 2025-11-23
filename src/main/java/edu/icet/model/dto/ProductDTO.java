@@ -1,4 +1,17 @@
 package edu.icet.model.dto;
 
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+
 public class ProductDTO {
+    private String id;
+    private String name;
+    private String description;
+    private double unitPrice;
+    private int qtyOnHand;
 }
