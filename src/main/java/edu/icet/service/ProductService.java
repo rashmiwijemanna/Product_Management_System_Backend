@@ -27,4 +27,8 @@ public class ProductService {
         }
         return productDTOS;
     }
+
+    public void add(ProductDTO productDTO){
+        productRepository.save(modelMapper.map(productDTO, Product.class));
+    }
 }
